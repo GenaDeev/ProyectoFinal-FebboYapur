@@ -1,11 +1,13 @@
-export default function NavLink({ content, href }) {
+import { NavLink } from "react-router-dom"
+
+export default function NavLinkComponent({ content, href }) {
     return (
         <li>
-            <a
+            <NavLink
                 className="hover:text-[#0081a3] hover:bg-white/10 rounded-xl transition-colors duration-200 p-2"
-                href={href}>
+                to={href}>
                 {content}
-            </a>
+            </NavLink>
         </li>
     )
 }

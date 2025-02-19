@@ -1,0 +1,79 @@
+{
+    "categories": [
+        {
+            "id": "1",
+            "name": "Deportivo",
+            "slug": "deportivo"
+        },
+        {
+            "id": "2",
+            "name": "Urbano",
+            "slug": "urbano"
+        },
+        {
+            "id": "3",
+            "name": "Calzado",
+            "slug": "calzado"
+        },
+        {
+            "id": "4",
+            "name": "Formal",
+            "slug": "formal"
+        },
+        {
+            "id": "5",
+            "name": "Accesorios",
+            "slug": "accesorios"
+        }
+    ],
+    "items": [
+        {
+            "id": "1",
+            "name": "Camiseta del Barcelona",
+            "imageUrl": "https://acdn-us.mitiendanube.com/stores/003/177/055/products/camiseta-local-roja-azul-barcelona-2024-2025-nike-1-2f1aeb87b6c2c0a07f17156693794609-480-0.jpeg",
+            "slug": "camiseta-del-barcelona",
+            "categoryId": "1",
+            "price": 10000
+        },
+        {
+            "id": "2",
+            "name": "Short del Barcelona",
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzrHGDCBO3O23VaO-aQkdIcFoy2lWpBV4lWg&s",
+            "slug": "short-del-barcelona",
+            "categoryId": "1",
+            "price": 5000
+        },
+        {
+            "id": "3",
+            "name": "Jean azul hombre",
+            "imageUrl": "https://acdn.mitiendanube.com/stores/943/997/products/jean-azul-medio-3f126b2d73d18c889317337673916806-640-0.jpg",
+            "slug": "jean-azul-hombre",
+            "categoryId": "2",
+            "price": 7000
+        },
+        {
+            "id": "4",
+            "name": "Zapatillas nike air max",
+            "imageUrl": "https://www.opensports.com.ar/media/catalog/product/cache/a6c7e1c8e1ee3bec21df5432c2a808a3/d/x/dx3705-001_0.jpg",
+            "slug": "zapatillas-nike-air-max",
+            "categoryId": "3",
+            "price": 5000
+        },
+        {
+            "id": "5",
+            "name": "Pantalon de vestir negro",
+            "imageUrl": "https://www.devre.la/media/catalog/product/d/e/devre-pantalon_08d000111-002_002.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=1350&width=900&canvas=900:1350",
+            "slug": "pantalon-de-vestir-negro",
+            "categoryId": "4",
+            "price": 15000
+        },
+        {
+            "id": "6",
+            "name": "Lentes de sol negros",
+            "imageUrl": "https://infinit.la/cdn/shop/files/6_888e61c2-43e5-46d8-90aa-a959881a2958.jpg?v=1690307405&width=2048",
+            "slug": "lentes-de-sol-negros",
+            "categoryId": "5",
+            "price": 2000
+        }
+    ]
+}
