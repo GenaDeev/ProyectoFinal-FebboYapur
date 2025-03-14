@@ -7,15 +7,19 @@ const productInCart = (cart, id) => {
 export const CartContext = createContext({
   cart: localStorage.getItem("cart")
     ? JSON.parse(localStorage.getItem("cart"))
-    : []
+    : [],
 });
 
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+    return localStorage.getItem("cart")
+      ? JSON.parse(localStorage.getItem("cart"))
+      : [];
+  });
 
   const addProduct = (product, amount) => {
     if (!productInCart(cart, product.id)) {
-      setCart((prev) => [...prev, { product, amount }]); 
+      setCart((prev) => [...prev, { product, amount }]);
     } else {
       setCart((prev) => {
         return prev.map((item) => {
