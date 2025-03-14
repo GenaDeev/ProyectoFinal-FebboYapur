@@ -1,12 +1,11 @@
-import ItemListContainer from '../components/ItemListContainer';
+import { ItemListContainer } from '../components';
+import { PageLayout } from '../layouts/PageLayout';
 
 export const Home = () => {
+    document.title = "ReactClothes, vestite con React!";
     return (
-        <main className='w-full h-full flex flex-col items-center pt-36'>
-            <img width={64} height={64} className='grayscale' alt="Logo de ReactClothes" src="/reactclothes-logo.webp" />
-            <h1 className='text-2xl font-bold text-[#0081a3]'>ReactClothes, vestite con React!</h1>
-            <h2 className='text-xl font-bold text-[#0081a3]'>¿Qué vestirás?</h2>
+        <PageLayout title="¿Qué vestirás?" titleColor="text-[#0081a3]">
             <ItemListContainer/>
-        </main>
+        </PageLayout>
     )
 }

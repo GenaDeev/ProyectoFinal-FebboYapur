@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 
-export default function NavLinkComponent({ content, href }) {
+export const NavLinkComponent = ({ content, href }) => {
     return (
         <li>
             <NavLink

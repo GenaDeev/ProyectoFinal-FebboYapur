@@ -1,4 +1,4 @@
-export default function Footer() {
+export const Footer = () => {
     return (
         <footer className="w-full flex items-center justify-center p-4 bg-zinc-900">
             <p className="text-gray-400 text-sm">

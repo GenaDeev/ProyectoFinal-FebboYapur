@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { getFullProductList, getProductListByCategoryId } from '../hooks';
-import Item from './Item';
+import { getFullProductList, getProductListByCategoryId } from '../config/firebase';
+import { Item } from './';
 
-export default function ItemListContainer({ categoryId }) {
+export const ItemListContainer = ({ categoryId }) => {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -23,7 +23,7 @@ export default function ItemListContainer({ categoryId }) {
     }, [categoryId])
 
     return (
-        <section className="w-full flex justify-center gap-10 flex-wrap mt-4 p-12">
+        <div className="w-full flex justify-center gap-10 flex-wrap mt-4">
             {!loading ? (
                 items && items.length > 0 ? (
                     items.map(item => (
@@ -36,6 +36,6 @@ export default function ItemListContainer({ categoryId }) {
                 <p>Cargando productos...</p>
             )}
 
-        </section>
+        </div>
     )
 }
