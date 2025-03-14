@@ -1,4 +1,4 @@
-import { createContext, use, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 const productInCart = (cart, id) => {
   return cart.some((e) => e.product.id === id);
